@@ -30,3 +30,9 @@ jobs:
 
       - name: Run Ruff
         run: ruff check .
+
+      - name: Django deployment check
+        env:
+          DJANGO_DEBUG: "False"
+          DJANGO_SECRET_KEY: "ci-test-secret-key"
+        run: python manage.py check --deploy
