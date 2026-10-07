@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kulasy Django</title>
+    <link rel="stylesheet" href="{% static 'core/style.css' %}">
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <p class="eyebrow">Django CI/CD</p>
+
+            <h1>Ассаламағалейкум!</h1>
+
+            <p class="description">
+                Это мой первый небольшой сайт на Django,
+                который проходит CI/CD через GitHub Actions.
+            </p>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                CI pipeline работает
+            </div>
+
+            <footer>
+                Built with Django · GitHub Actions · Ruff
+            </footer>
+        </section>
+    </main>
+</body>
+</html>

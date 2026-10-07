@@ -1,7 +1,5 @@
-
-# Create your views here.
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def home(request):
-    return HttpResponse("Assalaumagaleikum from Kulasy Django CI!")
+    return render(request, "core/home.html")

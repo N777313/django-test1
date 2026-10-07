@@ -1,5 +1,3 @@
-# added by developer 313
-
 from django.test import TestCase
 from django.urls import reverse
 
@@ -9,4 +7,6 @@ class HomePageTest(TestCase):
         response = self.client.get(reverse("home"))
 
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "Assalaumagaleikum from Kulasy Django CI!")
+        self.assertContains(response, "Ассаламағалейкум!")
+        self.assertContains(response, "Django CI/CD")
+        self.assertContains(response, "CI pipeline работает")
