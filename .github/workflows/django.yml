@@ -27,3 +27,6 @@ jobs:
 
       - name: Run tests
         run: python manage.py test
+
+      - name: Run Ruff
+        run: ruff check .
